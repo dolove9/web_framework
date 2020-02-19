@@ -18,6 +18,8 @@ public class MessageSourceConfig  implements WebMvcConfigurer{
     public ReloadableResourceBundleMessageSource messageSource() {
         ReloadableResourceBundleMessageSource messageSource = new ReloadableResourceBundleMessageSource();
 
+        //주석 추가
+
         // 메세지 프로퍼티파일의 위치와 이름을 지정한다.
         messageSource.setBasename("classpath:/messages/message");
         messageSource.setDefaultEncoding("UTF-8");
